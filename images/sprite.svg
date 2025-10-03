@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg">
-  <symbol id='check-mark-big' xmlns="http://www.w3.org/2000/svg" fill="none">
+  <symbol id='checkMarkBig' xmlns="http://www.w3.org/2000/svg" fill="none">
     <path stroke="#fff" stroke-linecap="round" stroke-width="2" d="M1 4.765 5.154 9 13 1"/>
   </symbol>
 
-  <symbol id='check-mark' xmlns="http://www.w3.org/2000/svg" fill="none">
+  <symbol id='checkMark' xmlns="http://www.w3.org/2000/svg" fill="none">
     <path stroke="#fff" stroke-linecap="round" d="M1 2.333 3.21 5 7 1"/>
   </symbol>
 

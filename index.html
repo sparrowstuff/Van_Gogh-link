@@ -22,5 +22,93 @@
 		/>
 		<link rel="manifest" href="./site.webmanifest" />
 	</head>
-	<body></body>
+
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__main-wrapper">
+					<a
+						href="#"
+						aria-label="Переход на главную страницу"
+						class="header__main-link"
+					>
+						<svg
+							class="header__main-link-logo"
+							width="180"
+							height="38"
+							aria-hidden="true"
+						>
+							<use xlink:href="images/sprite.svg#main-logo"></use>
+						</svg>
+					</a>
+
+					<nav class="main-nav main-nav--desktop">
+						<ul class="main-nav__list">
+							<li class="main-nav__item">
+								<a href="#" class="main-nav__link">Главная</a>
+							</li>
+							<li class="main-nav__item">
+								<a href="#" class="main-nav__link">Каталог</a>
+							</li>
+							<li class="main-nav__item">
+								<a href="#" class="main-nav__link">О&nbsp;компании</a>
+							</li>
+							<li class="main-nav__item">
+								<a href="#" class="main-nav__link"
+									>Оплата&nbsp;и&nbsp;Доставка</a
+								>
+							</li>
+							<li class="main-nav__item">
+								<a href="#" class="main-nav__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<button
+						class="burger-btn"
+						type="button"
+						aria-label="Открыть навигационное меню"
+						id="burgerBtn"
+					>
+						<span class="burger-btn__top-line"></span>
+						<span class="burger-btn__main-line"></span>
+						<span class="burger-btn__bottom-line"></span>
+					</button>
+					<nav class="main-nav main-nav--mobile">
+						<ul class="main-nav__list">
+							<li class="main-nav__item">
+								<a href="#" class="main-nav__link">Главная</a>
+							</li>
+							<li class="main-nav__item">
+								<a href="#" class="main-nav__link">Каталог</a>
+							</li>
+							<li class="main-nav__item">
+								<a href="#" class="main-nav__link">О&nbsp;компании</a>
+							</li>
+							<li class="main-nav__item">
+								<a href="#" class="main-nav__link"
+									>Оплата&nbsp;и&nbsp;Доставка</a
+								>
+							</li>
+							<li class="main-nav__item">
+								<a href="#" class="main-nav__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<section class="hero">
+			<div class="container">
+				<div class="hero__main-wrapper">
+					<h1 class="hero__title">РЕКОМЕНДУЕМОЕ&nbsp;ОБОРУДОВАНИЕ</h1>
+					<div class="hero__catalog-wrapper">
+						<ul class="hero__products-list" id="productsList"></ul>
+						<button class="hero__catalog-btn btn" type="button">
+							Перейти в каталог
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
 </html>

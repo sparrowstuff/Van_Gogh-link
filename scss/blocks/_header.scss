@@ -1,0 +1,14 @@
+.header {
+	padding: 1.31rem 0;
+
+	&__main-wrapper {
+		@include flexCenter(row, center, space-between);
+		gap: 2rem;
+		text-align: center;
+		position: relative;
+	}
+
+	&__main-link {
+		display: flex;
+	}
+}

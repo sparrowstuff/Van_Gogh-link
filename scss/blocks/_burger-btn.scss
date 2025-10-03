@@ -1,0 +1,50 @@
+.burger-btn {
+	@include flexCenter(column, center, center);
+	gap: 0.37rem;
+	width: 3.12rem;
+	height: 3.12rem;
+	border: unset;
+	outline: 1px solid $main;
+	border-radius: 0.5rem;
+	background-color: transparent;
+	padding: 1rem 0.81rem 1rem 0.81rem;
+
+	@media (min-width: $px-1160) {
+		display: none;
+	}
+
+	$root: &;
+
+	&__top-line,
+	&__main-line,
+	&__bottom-line {
+		width: 1.43rem;
+		height: 0.12rem;
+		display: block;
+		background-color: $main;
+		border-radius: 50%;
+	}
+
+	&__top-line,
+	&__bottom-line {
+		transition: transform $transition-300;
+	}
+
+	&__main-line {
+		transition: opacity $transition-300;
+	}
+
+	&--active {
+		#{$root}__top-line {
+			transform: translateY(8px) rotate(45deg);
+		}
+
+		#{$root}__main-line {
+			opacity: 0;
+		}
+
+		#{$root}__bottom-line {
+			transform: translateY(-8px) rotate(-45deg);
+		}
+	}
+}

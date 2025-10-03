@@ -1,0 +1,41 @@
+.product-card {
+	outline: 1px solid $light-grey;
+	border-radius: 0.5rem;
+
+	&__wrapper {
+		@include flexCenter(row, center, center);
+	}
+
+	&__text-wrapper {
+		padding: 1.93rem 1.87rem 1.93rem 1.87rem;
+		@include flexStart(column);
+		gap: 0.62rem;
+	}
+
+	&__title {
+		font-size: $px-18;
+		line-height: 120%;
+		font-weight: 400;
+		height: 4.12rem;
+	}
+
+	&__stock-info {
+		@include flexCenter(row, center, unset);
+		gap: 0.37rem;
+	}
+
+	&__stock-info-text {
+		font-size: $px-16;
+		line-height: 145%;
+		font-family: $openSans;
+	}
+
+	&__check-icon-wrapper {
+		display: block;
+		width: 14px;
+		height: 14px;
+		@include flexCenter(row, center, center);
+		border-radius: 50%;
+		background-color: $salad;
+	}
+}

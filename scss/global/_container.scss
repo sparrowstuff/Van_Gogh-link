@@ -4,28 +4,28 @@
 	padding: 0 15rem;
 	margin: 0 auto;
 
-	@media (max-width: 90rem) {
+	@media (max-width: $px-1440) {
 		max-width: 90rem;
-		padding: 8.75rem;
+		padding: 0 8.75rem;
 	}
 
-	@media (max-width: 72.5rem) {
+	@media (max-width: $px-1160) {
 		max-width: 72.5rem;
-		padding: 12.25rem;
+		padding: 0 12.25rem;
 	}
 
-	@media (max-width: 48rem) {
+	@media (max-width: $px-768) {
 		max-width: 48rem;
-		padding: 6rem;
+		padding: 0 6rem;
 	}
 
-	@media (max-width: 36rem) {
+	@media (max-width: $px-576) {
 		max-width: 36rem;
-		padding: 6.62rem;
+		padding: 0 6.62rem;
 	}
 
-	@media (max-width: 24.37rem) {
+	@media (max-width: $px-390) {
 		max-width: 24.37rem;
-		padding: 0.87rem;
+		padding: 0 0.87rem;
 	}
 }

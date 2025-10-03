@@ -1,0 +1,28 @@
+.hero {
+	padding: 5rem 0;
+
+	&__main-wrapper {
+		@include flexCenter(column, flex-start, unset);
+		gap: 1.87rem;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: $px-36;
+		line-height: 135%;
+		text-transform: uppercase;
+		text-align: left;
+	}
+
+	&__catalog-wrapper {
+		@include flexCenter(column, center, unset);
+		gap: 1.87rem;
+		width: 100%;
+	}
+
+	&__products-list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1.87rem;
+	}
+}

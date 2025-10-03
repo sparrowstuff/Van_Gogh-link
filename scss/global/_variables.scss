@@ -23,8 +23,12 @@ $openSans: 'Open-Sans', 'Arial', sans-serif;
 $roboto: 'Roboto', 'Arial', sans-serif;
 
 // viewport
-$vp-tablet: 64rem;
-$vp-mobile: 48rem;
+
+$px-1440: 90rem;
+$px-1160: 72.5rem;
+$px-768: 48rem;
+$px-576: 36rem;
+$px-390: 24.37rem;
 
 // transition
 $transition-300: ease-in 0.3s;
