@@ -4,10 +4,12 @@ import { ProductCard } from './productCard.js'
 function burgerMenuOpen() {
 	const burgerBtn = document.getElementById('burgerBtn')
 	const mainNav = document.querySelector('.main-nav--mobile')
+	const headerEL = document.querySelector('.header')
 
 	burgerBtn.addEventListener('click', () => {
 		burgerBtn.classList.toggle('burger-btn--active')
 		mainNav.classList.toggle('main-nav--active')
+		headerEL.classList.toggle('header--opened')
 	})
 }
 

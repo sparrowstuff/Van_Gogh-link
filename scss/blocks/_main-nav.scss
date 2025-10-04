@@ -51,6 +51,37 @@
 		#{$root}__list {
 			@include flexStart(column);
 			gap: unset;
+			position: relative;
+			z-index: 5;
+
+			&::after {
+				content: '';
+				width: 80vw;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: -10%;
+				background-color: $white;
+				z-index: -1;
+
+				@media (max-width: $px-576) {
+					width: 90vw;
+					left: -22%;
+				}
+
+				@media (max-width: 34.37rem) {
+					left: -7%;
+				}
+
+				@media (max-width: 25.62rem) {
+					// width: 93vw;
+					left: 0;
+				}
+
+				@media (max-width: 23.12rem) {
+					position: static;
+				}
+			}
 		}
 
 		#{$root}__item {
