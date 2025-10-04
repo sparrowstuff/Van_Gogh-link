@@ -3,10 +3,18 @@
 
 	&__list {
 		@include flexCenter(row, center, space-between);
-		gap: 5rem;
+		gap: min(6vw, 5rem);
 
-		@media (max-width: 90rem) {
-			gap: 6vw;
+		@media (max-width: 95rem) {
+			gap: 4vw;
+		}
+
+		@media (max-width: $px-1160) {
+			gap: min(6vw, 5rem);
+		}
+
+		@media (max-width: 78.12rem) {
+			gap: 3vw;
 		}
 	}
 

@@ -16,8 +16,10 @@ export class ProductCard {
 		cardTextWrapperEl.className = 'product-card__text-wrapper'
 
 		// picture element
-		const pictureEl = document.createElement('picture')
-		pictureEl.innerHTML = `source srcset="${this.data.imageSrcWebP}" type="image/webp">`
+		// const pictureEl = document.createElement('picture')
+		// const sourceTag = document.createElement('source')
+		// sourceTag.setAttribute('srcset', this.data.imageSrcWebP)
+		// sourceTag.setAttribute('srcset', 'images/webp')
 
 		// image
 		const imgEl = document.createElement('img')
@@ -27,6 +29,8 @@ export class ProductCard {
 		imgEl.alt = this.data.title
 		imgEl.srcset = this.data.imgSrc2x + ' 2x'
 		imgEl.className = 'product-card__img'
+
+		// pictureEl.appendChild(imgEl)
 
 		// title
 		const titleEl = document.createElement('h2')

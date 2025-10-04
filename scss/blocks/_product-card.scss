@@ -2,14 +2,85 @@
 	outline: 1px solid $light-grey;
 	border-radius: 0.5rem;
 
+	// @media (max-width: 50rem) {
+	// 	min-height: 100%;
+	// }
+
+	@media (max-width: $px-768) {
+		width: unset;
+	}
+
+	// @media (max-width: 40rem) {
+	// 	min-height: 23.31rem;
+	// }
+
+	@media (max-width: 39.37rem) {
+		height: 100%;
+	}
+
+	@media (max-width: 35rem) {
+		width: 40vw;
+	}
+
+	@media (max-width: 25.62rem) {
+		width: 43vw;
+		// min-height: 23.31rem;
+	}
+
 	&__wrapper {
-		@include flexCenter(row, center, center);
+		@include flexCenter(row, center, flex-start);
+
+		@media (max-width: 40.06rem) {
+			flex-direction: column;
+			min-height: 23.31rem;
+			height: 100%;
+		}
+	}
+
+	&__img {
+		// @media (max-width: 25.62rem) {
+		// 	height: 10.62rem;
+		// }
+
+		@media (max-width: 36.87rem) {
+			height: 11.06rem;
+		}
 	}
 
 	&__text-wrapper {
 		padding: 1.93rem 1.87rem 1.93rem 1.87rem;
 		@include flexStart(column);
 		gap: 0.62rem;
+
+		@media (max-width: 94.37rem) {
+			padding: 1.93rem 1rem 1.93rem 0.7rem;
+		}
+
+		@media (max-width: $px-1440) {
+			padding: 1.93rem 1.87rem 1.93rem 1.87rem;
+		}
+
+		@media (max-width: 83.12rem) {
+			padding: 1.93rem 0.2rem 1.93rem 1rem;
+		}
+
+		@media (max-width: $px-1160) {
+			padding: 1.93rem 1.87rem 1.93rem 1.87rem;
+		}
+
+		@media (max-width: 55.62rem) {
+			padding: 1.93rem 1rem 1.93rem 1.87rem;
+		}
+
+		@media (max-width: 40.06rem) {
+			padding: 1.2rem 0.62rem 0.62rem;
+			min-height: 11.25rem;
+			height: 100%;
+		}
+
+		@media (max-width: $px-391) {
+			gap: 0.2rem;
+		}
 	}
 
 	&__title {
@@ -17,17 +88,42 @@
 		line-height: 120%;
 		font-weight: 400;
 		height: 4.12rem;
+
+		@media (max-width: 78.12rem) {
+			font-size: 1.06rem;
+		}
+
+		@media (max-width: $px-1160) {
+			font-size: $px-18;
+		}
+
+		@media (max-width: 43.75rem) {
+			font-size: $px-16;
+		}
+
+		@media (max-width: 40.06rem) {
+			height: unset;
+			line-height: 150%;
+		}
 	}
 
 	&__stock-info {
 		@include flexCenter(row, center, unset);
 		gap: 0.37rem;
+
+		@media (max-width: 39.37rem) {
+			margin-top: auto;
+		}
 	}
 
 	&__stock-info-text {
 		font-size: $px-16;
 		line-height: 145%;
 		font-family: $openSans;
+
+		@media (max-width: $px-576) {
+			font-size: $px-14;
+		}
 	}
 
 	&__check-icon-wrapper {
@@ -37,5 +133,16 @@
 		@include flexCenter(row, center, center);
 		border-radius: 50%;
 		background-color: $salad;
+	}
+
+	&__btn {
+		@media (max-width: 40.06rem) {
+			width: 100%;
+			// margin-top: auto;
+		}
+
+		@media (max-width: $px-768) {
+			font-size: $px-16;
+		}
 	}
 }

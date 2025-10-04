@@ -1,9 +1,17 @@
 .hero {
 	padding: 5rem 0;
 
+	@media (max-width: $px-1160) {
+		padding: 3.1rem 0;
+	}
+
 	&__main-wrapper {
 		@include flexCenter(column, flex-start, unset);
 		gap: 1.87rem;
+
+		@media (max-width: $px-768) {
+			gap: 1.25rem;
+		}
 	}
 
 	&__title {
@@ -12,17 +20,47 @@
 		line-height: 135%;
 		text-transform: uppercase;
 		text-align: left;
+
+		@media (max-width: $px-1160) {
+			font-size: $px-30;
+		}
+
+		@media (max-width: 56.62rem) {
+			font-size: $px-20;
+			line-height: 120%;
+		}
 	}
 
 	&__catalog-wrapper {
 		@include flexCenter(column, center, unset);
 		gap: 1.87rem;
 		width: 100%;
+
+		@media (max-width: $px-391) {
+			gap: 1.2rem;
+		}
 	}
 
 	&__products-list {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		gap: 1.87rem;
+		gap: 1.87rem 3rem;
+
+		@media (max-width: $px-1160) {
+			grid-template-columns: 1fr;
+		}
+
+		@media (max-width: 40.06rem) {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1rem 1.25rem;
+		}
+	}
+
+	&__products-item {
+		@media (max-width: 40.06rem) {
+			&:nth-last-child(-n + 2) {
+				display: none;
+			}
+		}
 	}
 }

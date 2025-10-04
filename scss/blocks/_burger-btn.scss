@@ -1,19 +1,22 @@
 .burger-btn {
 	@include flexCenter(column, center, center);
 	gap: 0.37rem;
-	width: 3.12rem;
-	height: 3.12rem;
+	// width: 3.12rem;
+	// height: 3.12rem;
 	border: unset;
 	outline: 1px solid $main;
 	border-radius: 0.5rem;
 	background-color: transparent;
 	padding: 1rem 0.81rem 1rem 0.81rem;
+	$root: &;
 
 	@media (min-width: $px-1160) {
 		display: none;
 	}
 
-	$root: &;
+	@media (max-width: $px-576) {
+		padding: 0.87rem 0.68rem 0.87rem 0.68rem;
+	}
 
 	&__top-line,
 	&__main-line,
