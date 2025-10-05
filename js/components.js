@@ -72,4 +72,30 @@ function renderProducts() {
 	})
 }
 
-export { burgerMenuOpen, renderProducts }
+function blockScrollAppearance() {
+	const blocksArray = [
+		document.querySelector('.hero'),
+		document.querySelector('.advantages'),
+	]
+
+	const observer = new IntersectionObserver(
+		(entries, observer) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.style.opacity = '1'
+					entry.target.style.transform = 'translateY(-1.25rem)'
+					entry.target.style.transition = '0.3s ease-in'
+
+					observer.unobserve(entry.target)
+				}
+			})
+		},
+		{ threshold: 0.2 }
+	)
+
+	blocksArray.forEach(block => {
+		observer.observe(block)
+	})
+}
+
+export { burgerMenuOpen, renderProducts, blockScrollAppearance }

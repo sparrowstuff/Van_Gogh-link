@@ -1,6 +1,8 @@
 .hero {
 	padding: 5rem 0 0;
 
+	opacity: 0;
+
 	@media (max-width: $px-1160) {
 		padding: 3.1rem 0 0;
 	}

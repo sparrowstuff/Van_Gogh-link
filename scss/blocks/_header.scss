@@ -1,5 +1,6 @@
 .header {
 	padding: 1.31rem 0 1.31rem 0;
+	z-index: 9999 !important;
 
 	&--opened {
 		outline: 1px solid $light-grey;
@@ -22,5 +23,8 @@
 
 	&__main-link {
 		display: flex;
+		opacity: 0;
+
+		animation: mainLinkShowUp ease-in 0.8s forwards;
 	}
 }

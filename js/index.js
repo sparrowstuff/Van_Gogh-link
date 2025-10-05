@@ -4,4 +4,6 @@ window.addEventListener('DOMContentLoaded', () => {
 	components.burgerMenuOpen()
 
 	components.renderProducts()
+
+	components.blockScrollAppearance()
 })
