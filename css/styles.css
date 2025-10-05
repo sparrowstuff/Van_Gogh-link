@@ -673,6 +673,11 @@ footer {
     line-height: 120%;
   }
 }
+@media (max-width: 22.5rem) {
+  .hero__title {
+    font-size: 1rem;
+  }
+}
 .hero__catalog-wrapper {
   display: flex;
   flex-direction: column;
@@ -705,6 +710,11 @@ footer {
   .hero__products-list {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem 1.25rem;
+  }
+}
+@media (max-width: 23rem) {
+  .hero__products-list {
+    gap: 0.62rem;
   }
 }
 @media (max-width: 40.06rem) {
