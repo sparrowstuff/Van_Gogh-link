@@ -1,0 +1,157 @@
+.advantages {
+	padding: 0.25rem 0 3.12rem 0;
+	$root: &;
+
+	@media (max-width: $px-1440) {
+		padding: 5rem 0 3.12rem 0;
+	}
+
+	@media (max-width: $px-1160) {
+		padding: 3.12rem 0 3.12rem 0;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: $px-36;
+		line-height: 135%;
+		text-align: left;
+		margin-bottom: 1.87rem;
+
+		@media (max-width: $px-1160) {
+			font-size: $px-30;
+		}
+
+		@media (max-width: $px-768) {
+			font-size: $px-20;
+			line-height: 120%;
+		}
+
+		@media (max-width: $px-576) {
+			margin-bottom: 1.25rem;
+		}
+	}
+
+	&__main-wrapper {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1.87rem;
+
+		@media (max-width: 81.87rem) {
+			display: flex;
+			flex-direction: column;
+		}
+
+		@media (max-width: $px-1160) {
+			gap: 2rem;
+		}
+
+		@media (max-width: $px-576) {
+			gap: 1.3rem;
+		}
+
+		@media (max-width: $px-391) {
+			gap: 1rem;
+		}
+	}
+
+	&__gallery {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2.06rem 1.87rem;
+
+		@media (max-width: 118.75rem) {
+			height: 19.68rem;
+		}
+
+		@media (max-width: 81.87rem) {
+			height: unset;
+		}
+
+		@media (max-width: $px-576) {
+			gap: 0.93rem;
+		}
+	}
+
+	&__picture--xxl {
+		grid-column: span 2;
+
+		#{$root}__image {
+			@media (max-width: $px-1920) {
+				min-height: 10rem;
+			}
+
+			@media (max-width: 81.87rem) {
+				// min-height: 13.75rem;
+				min-height: unset;
+				// width: 100%;
+			}
+		}
+	}
+
+	&__image {
+		@media (max-width: 81.87rem) {
+			width: 100%;
+		}
+	}
+
+	&__picture,
+	&__picture--xxl {
+		border-radius: 0.5rem;
+		overflow: hidden;
+	}
+
+	&__info-block {
+		@include flexStart(column);
+		gap: 1.5rem;
+
+		@media (max-width: $px-1440) {
+			gap: 1.25rem;
+		}
+	}
+
+	&__description {
+		font-weight: 700;
+		font-size: $px-16;
+		line-height: 150%;
+
+		max-width: 44.06rem;
+
+		@media (max-width: $px-1440) {
+			max-width: 30.31rem;
+		}
+
+		@media (max-width: 81.87rem) {
+			max-width: unset;
+		}
+
+		@media (max-width: $px-1160) {
+			max-width: 45.31rem;
+		}
+
+		@media (max-width: $px-576) {
+			max-width: 19.2rem;
+		}
+	}
+
+	&__review {
+		font-size: $px-16;
+		line-height: 150%;
+		font-family: $openSans;
+
+		@media (max-width: $px-1440) {
+			max-width: 30.31rem;
+		}
+
+		@media (max-width: 81.87rem) {
+			max-width: unset;
+		}
+	}
+
+	&__btn {
+		margin-top: 0.62rem;
+
+		@media (max-width: $px-576) {
+			margin-top: unset;
+		}
+	}
+}

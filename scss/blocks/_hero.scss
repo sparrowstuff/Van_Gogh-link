@@ -1,8 +1,12 @@
 .hero {
-	padding: 5rem 0;
+	padding: 5rem 0 0;
 
 	@media (max-width: $px-1160) {
-		padding: 3.1rem 0;
+		padding: 3.1rem 0 0;
+	}
+
+	@media (max-width: $px-391) {
+		padding: 3rem 0 0;
 	}
 
 	&__main-wrapper {
@@ -10,7 +14,7 @@
 		gap: 1.87rem;
 
 		@media (max-width: $px-768) {
-			gap: 1.25rem;
+			gap: 2rem;
 		}
 	}
 
@@ -35,6 +39,10 @@
 		@include flexCenter(column, center, unset);
 		gap: 1.87rem;
 		width: 100%;
+
+		@media (max-width: $px-576) {
+			gap: 1rem;
+		}
 
 		@media (max-width: $px-391) {
 			gap: 1.2rem;

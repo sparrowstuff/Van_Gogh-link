@@ -3,9 +3,24 @@
 	background-color: $main;
 	color: $white;
 	border-radius: 0.5rem;
+	border: unset;
 
 	font-size: $px-18;
 	line-height: 145%;
 	font-family: $openSans;
 	font-weight: 400;
+
+	transition: background-color $transition-300, opacity $transition-300;
+
+	&:hover,
+	&:focus-visible,
+	&:active {
+		background-color: $orange;
+	}
+
+	&:disabled {
+		background-color: $main;
+		opacity: 0.2;
+		pointer-events: none;
+	}
 }

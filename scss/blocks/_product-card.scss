@@ -78,6 +78,10 @@
 			height: 100%;
 		}
 
+		@media (max-width: $px-576) {
+			padding: 0.2rem 0.62rem 0.62rem;
+		}
+
 		@media (max-width: $px-391) {
 			gap: 0.2rem;
 		}
