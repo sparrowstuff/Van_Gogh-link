@@ -8,6 +8,10 @@
 	padding: 1rem 0.81rem 1rem 0.81rem;
 	$root: &;
 
+	opacity: 0;
+
+	animation: mainLinkShowUp ease-in 0.3s forwards;
+
 	@media (min-width: $px-1160) {
 		display: none;
 	}
