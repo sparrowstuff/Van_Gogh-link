@@ -80,5 +80,11 @@
 				display: none;
 			}
 		}
+
+		&:nth-child(2) {
+			.product-card__check-icon-wrapper {
+				background-color: $orange;
+			}
+		}
 	}
 }

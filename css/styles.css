@@ -748,6 +748,9 @@ footer {
     display: none;
   }
 }
+.hero__products-item:nth-child(2) .product-card__check-icon-wrapper {
+  background-color: #ee753e;
+}
 
 .btn {
   padding: 0.5rem 1.87rem 0.75rem;
