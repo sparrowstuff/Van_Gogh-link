@@ -1,8 +1,6 @@
 .burger-btn {
 	@include flexCenter(column, center, center);
 	gap: 0.37rem;
-	// width: 3.12rem;
-	// height: 3.12rem;
 	border: unset;
 	outline: 1px solid $main;
 	border-radius: 0.5rem;

@@ -15,22 +15,15 @@ export class ProductCard {
 		const cardTextWrapperEl = document.createElement('div')
 		cardTextWrapperEl.className = 'product-card__text-wrapper'
 
-		// picture element
-		// const pictureEl = document.createElement('picture')
-		// const sourceTag = document.createElement('source')
-		// sourceTag.setAttribute('srcset', this.data.imageSrcWebP)
-		// sourceTag.setAttribute('srcset', 'images/webp')
-
 		// image
+
 		const imgEl = document.createElement('img')
 		imgEl.setAttribute('width', '220')
 		imgEl.setAttribute('height', '220')
-		imgEl.src = this.data.imageSrc
+		imgEl.src = this.data.imgSrc
 		imgEl.alt = this.data.title
 		imgEl.srcset = this.data.imgSrc2x + ' 2x'
 		imgEl.className = 'product-card__img'
-
-		// pictureEl.appendChild(imgEl)
 
 		// title
 		const titleEl = document.createElement('h2')

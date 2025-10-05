@@ -43,7 +43,7 @@
 		background-color: $white;
 		width: 100%;
 		position: absolute;
-		top: 175%; // check pixelPerfect
+		top: 175%;
 		opacity: 0;
 		transition: opacity $transition-300;
 		pointer-events: none;
@@ -74,7 +74,6 @@
 				}
 
 				@media (max-width: 25.62rem) {
-					// width: 93vw;
 					left: 0;
 				}
 

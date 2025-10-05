@@ -2,17 +2,9 @@
 	outline: 1px solid $light-grey;
 	border-radius: 0.5rem;
 
-	// @media (max-width: 50rem) {
-	// 	min-height: 100%;
-	// }
-
 	@media (max-width: $px-768) {
 		width: unset;
 	}
-
-	// @media (max-width: 40rem) {
-	// 	min-height: 23.31rem;
-	// }
 
 	@media (max-width: 39.37rem) {
 		height: 100%;
@@ -24,7 +16,6 @@
 
 	@media (max-width: 25.62rem) {
 		width: 43vw;
-		// min-height: 23.31rem;
 	}
 
 	&__wrapper {
@@ -38,10 +29,6 @@
 	}
 
 	&__img {
-		// @media (max-width: 25.62rem) {
-		// 	height: 10.62rem;
-		// }
-
 		@media (max-width: 36.87rem) {
 			height: 11.06rem;
 		}
@@ -142,7 +129,6 @@
 	&__btn {
 		@media (max-width: 40.06rem) {
 			width: 100%;
-			// margin-top: auto;
 		}
 
 		@media (max-width: $px-768) {
