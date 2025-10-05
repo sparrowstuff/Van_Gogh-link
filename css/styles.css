@@ -738,7 +738,7 @@ footer {
     gap: 1rem 1.25rem;
   }
 }
-@media (max-width: 23rem) {
+@media (max-width: 24rem) {
   .hero__products-list {
     gap: 0.62rem;
   }
